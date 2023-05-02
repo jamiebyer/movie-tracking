@@ -1,0 +1,196 @@
+{
+    "movies": [
+        {
+            "name": "jennifer's body",
+            "date": "01-01-2023"
+        },
+        {
+            "name": "wild strawberries",
+            "date": "05-01-2023"
+        },
+        {
+            "name": "once",
+            "date": "05-01-2023"
+        },
+        {
+            "name": "the unbearable weight of massive talent",
+            "date": "07-01-2023"
+        },
+        {
+            "name": "isle of dogs",
+            "date": "09-01-2023"
+        },
+        {
+            "name": "les parapluies de cherbourg",
+            "date": "13-01-2023"
+        },
+        {
+            "name": "the f word",
+            "date": "14-01-2023"
+        },
+        {
+            "name": "willy's wonderland",
+            "date": "14-01-2023"
+        },
+        {
+            "name": "marriage story",
+            "date": "15-01-2023"
+        },
+        {
+            "name": "office space",
+            "date": "17-01-2023"
+        },
+        {
+            "name": "the secret life of walter mitty",
+            "date": "17-01-2023"
+        },
+        {
+            "name": "mr. peabody and sherman",
+            "date": "20-01-2023"
+        },
+        {
+            "name": "brazil",
+            "date": "22-01-2023"
+        },
+        {
+            "name": "ruby sparks",
+            "date": "31-01-2023"
+        },
+        {
+            "name": "white noise",
+            "date": "04-02-2023"
+        },
+        {
+            "name": "mysterious skin",
+            "date": "04-02-2023"
+        },
+        {
+            "name": "closer",
+            "date": "04-02-2023"
+        },
+        {
+            "name": "megamind",
+            "date": "10-02-2023"
+        },
+        {
+            "name": "game night",
+            "date": "11-02-2023"
+        },
+        {
+            "name": "loving vincent",
+            "date": "12-02-2023"
+        },
+        {
+            "name": "human form",
+            "date": "12-02-2023"
+        },
+        {
+            "name": "almost famous",
+            "date": "17-02-2023"
+        },
+        {
+            "name": "cool world",
+            "date": "18-02-2023"
+        },
+        {
+            "name": "into the world",
+            "date": "20-02-2023"
+        },
+        {
+            "name": "garden state",
+            "date": "22-02-2023"
+        },
+        {
+            "name": "3 way junction",
+            "date": "22-02-2023"
+        },
+        {
+            "name": "storytelling",
+            "date": "22-02-2023"
+        },
+        {
+            "name": "the social network",
+            "date": "23-02-2023"
+        },
+        {
+            "name": "lost in translation",
+            "date": "23-02-2023"
+        },
+        {
+            "name": "high school musical",
+            "date": "25-02-2023"
+        },
+        {
+            "name": "the fifth element",
+            "date": "26-02-2023"
+        },
+        {
+            "name": "fantastic planet",
+            "date": "07-03-2023"
+        },
+        {
+            "name": "the green knight",
+            "date": "17-03-2023"
+        },
+        {
+            "name": "ping pong",
+            "date": "18-03-2023"
+        },
+        {
+            "name": "stalker",
+            "date": "19-03-2023"
+        },
+        {
+            "name": "princess bride",
+            "date": "24-03-2023"
+        },
+        {
+            "name": "party girl",
+            "date": "31-03-2023"
+        },
+        {
+            "name": "perfect blue",
+            "date": "31-03-2023"
+        },
+        {
+            "name": "your name",
+            "date": "02-04-2023"
+        },
+        {
+            "name": "the end of the tour",
+            "date": "03-04-2023"
+        },
+        {
+            "name": "the super mario bros movie",
+            "date": "05-04-2023"
+        },
+        {
+            "name": "nick and norah's infinite playlist",
+            "date": "08-04-2023"
+        },
+        {
+            "name": "eurovision song contest: the story of fire saga",
+            "date": "09-04-2023"
+        },
+        {
+            "name": "marie antoinette",
+            "date": "09-04-2023"
+        },
+        {
+            "name": "bottle rocket",
+            "date": "13-04-2023"
+        },
+        {
+            "name": "guns akimbo",
+            "date": "14-04-2023"
+        },
+        {
+            "name": "election",
+            "date": "14-04-2023"
+        },
+        {
+            "name": "harold and maude",
+            "date": "26-04-2023"
+        }
+    ]
+}

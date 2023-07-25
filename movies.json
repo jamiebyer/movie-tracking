@@ -2,195 +2,426 @@
     "movies": [
         {
             "name": "jennifer's body",
-            "date": "01-01-2023"
+            "date": "01-01-2023",
+            "startYear": "2009",
+            "runtimeMinutes": "102",
+            "genres": "Comedy,Horror",
+            "tconst": "tt1131734",
+            "averageRating": 5.4
         },
         {
             "name": "wild strawberries",
-            "date": "05-01-2023"
+            "date": "05-01-2023",
+            "startYear": "1957",
+            "runtimeMinutes": "91",
+            "genres": "Drama,Romance",
+            "tconst": "tt0050986",
+            "averageRating": 8.1
         },
         {
             "name": "once",
-            "date": "05-01-2023"
+            "date": "05-01-2023",
+            "startYear": "1973",
+            "runtimeMinutes": "100",
+            "genres": "Fantasy",
+            "tconst": "tt0071941",
+            "averageRating": 6.2
         },
         {
             "name": "the unbearable weight of massive talent",
-            "date": "07-01-2023"
+            "date": "07-01-2023",
+            "startYear": "2022",
+            "runtimeMinutes": "107",
+            "genres": "Action,Comedy,Crime",
+            "tconst": "tt11291274",
+            "averageRating": 7.0
         },
         {
             "name": "isle of dogs",
-            "date": "09-01-2023"
+            "date": "09-01-2023",
+            "startYear": "2018",
+            "runtimeMinutes": "101",
+            "genres": "Adventure,Animation,Comedy",
+            "tconst": "tt5104604"
         },
         {
-            "name": "les parapluies de cherbourg",
-            "date": "13-01-2023"
+            "name": "the umbrellas of cherbourg",
+            "date": "13-01-2023",
+            "startYear": "1964",
+            "runtimeMinutes": "91",
+            "genres": "Drama,Musical,Romance",
+            "tconst": "tt0058450",
+            "averageRating": 7.8
         },
         {
-            "name": "the f word",
-            "date": "14-01-2023"
+            "name": "what if",
+            "date": "14-01-2023",
+            "startYear": "2013"
         },
         {
             "name": "willy's wonderland",
-            "date": "14-01-2023"
+            "date": "14-01-2023",
+            "startYear": "2021",
+            "runtimeMinutes": "88",
+            "genres": "Action,Comedy,Horror",
+            "tconst": "tt8114980",
+            "averageRating": 5.5
         },
         {
             "name": "marriage story",
-            "date": "15-01-2023"
+            "date": "15-01-2023",
+            "startYear": "1992",
+            "runtimeMinutes": "101",
+            "genres": "Comedy,Romance",
+            "tconst": "tt0107347",
+            "averageRating": 6.2
         },
         {
             "name": "office space",
-            "date": "17-01-2023"
+            "date": "17-01-2023",
+            "startYear": "1992",
+            "runtimeMinutes": "2",
+            "genres": "Animation,Comedy,Short",
+            "tconst": "tt0102578",
+            "averageRating": 7.2
         },
         {
             "name": "the secret life of walter mitty",
-            "date": "17-01-2023"
+            "date": "17-01-2023",
+            "startYear": "1947",
+            "runtimeMinutes": "110",
+            "genres": "Comedy,Fantasy,Romance",
+            "tconst": "tt0039808",
+            "averageRating": 6.9
         },
         {
-            "name": "mr. peabody and sherman",
-            "date": "20-01-2023"
+            "name": "mr. peabody & sherman",
+            "date": "20-01-2023",
+            "startYear": "2014",
+            "runtimeMinutes": "92",
+            "genres": "Adventure,Animation,Comedy",
+            "tconst": "tt0864835",
+            "averageRating": 6.8
         },
         {
             "name": "brazil",
-            "date": "22-01-2023"
+            "date": "22-01-2023",
+            "startYear": "1944",
+            "runtimeMinutes": "91",
+            "genres": "Comedy,Musical,Romance",
+            "tconst": "tt0036670",
+            "averageRating": 5.9
         },
         {
             "name": "ruby sparks",
-            "date": "31-01-2023"
+            "date": "31-01-2023",
+            "startYear": "2012",
+            "runtimeMinutes": "104",
+            "genres": "Comedy,Drama,Fantasy",
+            "tconst": "tt1839492",
+            "averageRating": 7.2
         },
         {
             "name": "white noise",
-            "date": "04-02-2023"
+            "date": "04-02-2023",
+            "startYear": "2005",
+            "runtimeMinutes": "101",
+            "genres": "Drama,Horror,Mystery",
+            "tconst": "tt0375210",
+            "averageRating": 5.5
         },
         {
             "name": "mysterious skin",
-            "date": "04-02-2023"
+            "date": "04-02-2023",
+            "startYear": "2004",
+            "runtimeMinutes": "105",
+            "genres": "Drama",
+            "tconst": "tt0370986",
+            "averageRating": 7.6
         },
         {
             "name": "closer",
-            "date": "04-02-2023"
+            "date": "04-02-2023",
+            "startYear": "2001",
+            "runtimeMinutes": "24",
+            "genres": "Documentary,Short",
+            "tconst": "tt0350722",
+            "averageRating": 4.5
         },
         {
             "name": "megamind",
-            "date": "10-02-2023"
+            "date": "10-02-2023",
+            "startYear": "2010",
+            "runtimeMinutes": "95",
+            "genres": "Action,Animation,Comedy",
+            "tconst": "tt1001526",
+            "averageRating": 7.3
         },
         {
             "name": "game night",
-            "date": "11-02-2023"
+            "date": "11-02-2023",
+            "startYear": "2018",
+            "runtimeMinutes": "\\N",
+            "genres": "Drama,Short",
+            "tconst": "tt10436978"
         },
         {
             "name": "loving vincent",
-            "date": "12-02-2023"
+            "date": "12-02-2023",
+            "startYear": "2017",
+            "runtimeMinutes": "94",
+            "genres": "Animation,Drama,Mystery",
+            "tconst": "tt3262342",
+            "averageRating": 7.8
         },
         {
             "name": "human form",
-            "date": "12-02-2023"
+            "date": "12-02-2023",
+            "startYear": "2014",
+            "runtimeMinutes": "12",
+            "genres": "Drama,Horror,Sci-Fi",
+            "tconst": "tt3662666"
         },
         {
             "name": "almost famous",
-            "date": "17-02-2023"
+            "date": "17-02-2023",
+            "startYear": "2000",
+            "runtimeMinutes": "122",
+            "genres": "Adventure,Comedy,Drama",
+            "tconst": "tt0181875",
+            "averageRating": 7.9
         },
         {
             "name": "cool world",
-            "date": "18-02-2023"
+            "date": "18-02-2023",
+            "startYear": "1992",
+            "runtimeMinutes": "102",
+            "genres": "Animation,Comedy,Fantasy",
+            "tconst": "tt0104009",
+            "averageRating": 4.8
         },
         {
-            "name": "into the world",
-            "date": "20-02-2023"
+            "name": "into the wild",
+            "date": "20-02-2023",
+            "startYear": "2007",
+            "runtimeMinutes": "148",
+            "genres": "Adventure,Biography,Drama",
+            "tconst": "tt0758758",
+            "averageRating": 8.1
         },
         {
             "name": "garden state",
-            "date": "22-02-2023"
+            "date": "22-02-2023",
+            "startYear": "2004",
+            "runtimeMinutes": "102",
+            "genres": "Comedy,Drama,Romance",
+            "tconst": "tt0333766",
+            "averageRating": 7.4
         },
         {
             "name": "3 way junction",
-            "date": "22-02-2023"
+            "date": "22-02-2023",
+            "startYear": "2018",
+            "runtimeMinutes": "101",
+            "genres": "Adventure,Drama",
+            "tconst": "tt5742264",
+            "averageRating": 6.0
         },
         {
             "name": "storytelling",
-            "date": "22-02-2023"
+            "date": "22-02-2023",
+            "startYear": "2001",
+            "runtimeMinutes": "87",
+            "genres": "Comedy,Drama,Romance",
+            "tconst": "tt0250081",
+            "averageRating": 6.8
         },
         {
             "name": "the social network",
-            "date": "23-02-2023"
+            "date": "23-02-2023",
+            "startYear": "2010",
+            "runtimeMinutes": "120",
+            "genres": "Biography,Drama",
+            "tconst": "tt1285016",
+            "averageRating": 7.8
         },
         {
             "name": "lost in translation",
-            "date": "23-02-2023"
+            "date": "23-02-2023",
+            "startYear": "2003",
+            "runtimeMinutes": "102",
+            "genres": "Comedy,Drama",
+            "tconst": "tt0335266",
+            "averageRating": 7.7
         },
         {
             "name": "high school musical",
-            "date": "25-02-2023"
+            "date": "25-02-2023",
+            "startYear": "NA",
+            "runtimeMinutes": "NA",
+            "genres": "NA",
+            "tconst": "NA"
         },
         {
             "name": "the fifth element",
-            "date": "26-02-2023"
+            "date": "26-02-2023",
+            "startYear": "1997",
+            "runtimeMinutes": "126",
+            "genres": "Action,Adventure,Sci-Fi",
+            "tconst": "tt0119116",
+            "averageRating": 7.6
         },
         {
             "name": "fantastic planet",
-            "date": "07-03-2023"
+            "date": "07-03-2023",
+            "startYear": "1973",
+            "runtimeMinutes": "72",
+            "genres": "Animation,Sci-Fi",
+            "tconst": "tt0070544",
+            "averageRating": 7.7
         },
         {
             "name": "the green knight",
-            "date": "17-03-2023"
+            "date": "17-03-2023",
+            "startYear": "2022",
+            "runtimeMinutes": "38",
+            "genres": "Fantasy,Short",
+            "tconst": "tt19844000",
+            "averageRating": 6.5
         },
         {
             "name": "ping pong",
-            "date": "18-03-2023"
+            "date": "18-03-2023",
+            "startYear": "1986",
+            "runtimeMinutes": "100",
+            "genres": "Comedy,Drama,Mystery",
+            "tconst": "tt0091756",
+            "averageRating": 6.8
         },
         {
             "name": "stalker",
-            "date": "19-03-2023"
+            "date": "19-03-2023",
+            "startYear": "1979",
+            "runtimeMinutes": "162",
+            "genres": "Drama,Sci-Fi",
+            "tconst": "tt0079944",
+            "averageRating": 8.1
         },
         {
-            "name": "princess bride",
-            "date": "24-03-2023"
+            "name": "the princess bride",
+            "date": "24-03-2023",
+            "startYear": "1987",
+            "runtimeMinutes": "98",
+            "genres": "Adventure,Comedy,Family",
+            "tconst": "tt0093779",
+            "averageRating": 8.0
         },
         {
             "name": "party girl",
-            "date": "31-03-2023"
+            "date": "31-03-2023",
+            "startYear": "1930",
+            "runtimeMinutes": "67",
+            "genres": "Crime,Drama,Romance",
+            "tconst": "tt0021239",
+            "averageRating": 5.1
         },
         {
             "name": "perfect blue",
-            "date": "31-03-2023"
+            "date": "31-03-2023",
+            "startYear": "1997",
+            "runtimeMinutes": "81",
+            "genres": "Animation,Crime,Drama",
+            "tconst": "tt0156887",
+            "averageRating": 8.0
         },
         {
-            "name": "your name",
-            "date": "02-04-2023"
+            "name": "your name.",
+            "date": "02-04-2023",
+            "startYear": "2016",
+            "runtimeMinutes": "106",
+            "genres": "Animation,Drama,Fantasy",
+            "tconst": "tt5311514",
+            "averageRating": 8.4
         },
         {
             "name": "the end of the tour",
-            "date": "03-04-2023"
+            "date": "03-04-2023",
+            "startYear": "2015",
+            "runtimeMinutes": "106",
+            "genres": "Biography,Drama",
+            "tconst": "tt3416744"
         },
         {
-            "name": "the super mario bros movie",
-            "date": "05-04-2023"
+            "name": "the super mario bros. movie",
+            "date": "05-04-2023",
+            "startYear": "2023",
+            "runtimeMinutes": "92",
+            "genres": "Adventure,Animation,Comedy",
+            "tconst": "tt6718170",
+            "averageRating": 7.3
         },
         {
             "name": "nick and norah's infinite playlist",
-            "date": "08-04-2023"
+            "date": "08-04-2023",
+            "startYear": "2008",
+            "runtimeMinutes": "90",
+            "genres": "Comedy,Drama,Music",
+            "tconst": "tt0981227",
+            "averageRating": 6.6
         },
         {
             "name": "eurovision song contest: the story of fire saga",
-            "date": "09-04-2023"
+            "date": "09-04-2023",
+            "startYear": "2020",
+            "runtimeMinutes": "123",
+            "genres": "Comedy,Music",
+            "tconst": "tt8580274",
+            "averageRating": 6.5
         },
         {
             "name": "marie antoinette",
-            "date": "09-04-2023"
+            "date": "09-04-2023",
+            "startYear": "1938",
+            "runtimeMinutes": "149",
+            "genres": "Biography,Drama,History",
+            "tconst": "tt0030418",
+            "averageRating": 7.3
         },
         {
             "name": "bottle rocket",
-            "date": "13-04-2023"
+            "date": "13-04-2023",
+            "startYear": "1994",
+            "runtimeMinutes": "13",
+            "genres": "Comedy,Crime,Drama",
+            "tconst": "tt0109322",
+            "averageRating": 6.7
         },
         {
             "name": "guns akimbo",
-            "date": "14-04-2023"
+            "date": "14-04-2023",
+            "startYear": "2019",
+            "runtimeMinutes": "98",
+            "genres": "Action,Comedy,Crime",
+            "tconst": "tt6902676",
+            "averageRating": 6.3
         },
         {
             "name": "election",
-            "date": "14-04-2023"
+            "date": "14-04-2023",
+            "startYear": "1999",
+            "runtimeMinutes": "103",
+            "genres": "Comedy,Romance",
+            "tconst": "tt0126886",
+            "averageRating": 7.3
         },
         {
             "name": "harold and maude",
-            "date": "26-04-2023"
+            "date": "26-04-2023",
+            "startYear": "1971",
+            "runtimeMinutes": "91",
+            "genres": "Comedy,Drama,Romance",
+            "tconst": "tt0067185",
+            "averageRating": 7.9
         }
     ]
 }

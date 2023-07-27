@@ -15,14 +15,12 @@ def basic_time_hist(interval, save=False):
         df = pd.DataFrame(dict(counts=counts), pd.DatetimeIndex(values, name='dates'))
 
         if interval == "daily":
-            #fig = px.bar(df.index, df["counts"])
             fig = px.bar(df)
         elif interval == "monthly":
             df = df.resample('M').sum()
             df = df.reset_index()
             df["dates"] = df["dates"].apply(lambda x: x.strftime('%Y-%m'))
             df.set_index('dates', inplace=True)
-            #fig = px.bar(df.index, df["counts"])
             fig = px.bar(df)
         elif interval == "yearly":
             df = df.resample('Y').sum()
@@ -30,13 +28,8 @@ def basic_time_hist(interval, save=False):
             df["dates"] = df["dates"].apply(lambda x: x.strftime('%Y'))
             df.set_index('dates', inplace=True)
             fig = px.bar(df)
-            #fig = px.bar(df.index, df["counts"])
 
         #px.title("movies watched " + interval)
-        #plt.tight_layout
         
         return fig
-        #if save:
-        #    plt.savefig("figures/basic-time-hist-" + interval + ".png")
-        #plt.show()
 

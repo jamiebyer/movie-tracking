@@ -4,7 +4,7 @@
 from os import environ
 
 import dash
-from dash import dcc, html, dash_table
+from dash import dcc, html, dash_table, no_update
 from dash.dependencies import Input, Output
 from flask import Flask
 import pandas as pd
@@ -13,10 +13,8 @@ import plotly.graph_objects as go
 import json
 
 from plotting import basic_time_hist
-from add_movies import subset_data_table
-
-with open("movies.json",'r') as file:
-    movie_json = json.load(file)
+from add_movies import subset_data_table, add_movie
+from layout import tabs_layout, add_movies_layout, movie_list_layout, plotting_layout
 
 external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
 
@@ -28,16 +26,7 @@ app = dash.Dash(
 )
 app.config.suppress_callback_exceptions=True
 
-app.layout = html.Div([
-    html.H1('Movie Tracking'),
-    dcc.Tabs(id="tabs", value='add_movies', children=[
-        dcc.Tab(label='Add/Remove Movies', value='add_movies'),
-        dcc.Tab(label='Movie List', value='movie_list'),
-        dcc.Tab(label='Plotting', value='plotting'),
-    ]),
-    html.Div(id='tabs_content'),
-    dcc.Store(id="movie_list", data=movie_json),
-])
+app.layout = tabs_layout
 
 @app.callback(
     Output(component_id='tabs_content', component_property='children'),
@@ -51,52 +40,33 @@ def render_content(tabs):
     elif tabs == 'plotting':
         return plotting_layout
 
-
-add_movies_layout = html.Div(
-    [
-        dcc.Input(id="movie_title"),
-        dash_table.DataTable(id="data_table"),
-        html.Button('Add movie', id='add_movie'),
-        html.Button('Remove movie', id='remove_movie'),  
-    ],
-)
-
-movie_list_layout = html.Div(
-    [
-        dash_table.DataTable(id="movie_list_table"),
-    ]
-)
-
-plotting_layout = html.Div(
-    [
-        dcc.Dropdown(
-            id="graph_type",
-            options=[
-                {'label': 'Movies vs. Time', 'value': 'num_movies'},
-                {'label': 'Genre', 'value': 'genre'},
-            ],
-            value='num_movies'
-        ),
-        dcc.Graph(id="graph"),
-    ]
-)
-
-
 @app.callback(
     Output(component_id='movie_list', component_property='data'),
     Input(component_id='data_table', component_property='data'),
+    Input(component_id='data_table', component_property='selected_rows'),
+    Input(component_id='date', component_property='date'),
     Input(component_id='add_movie', component_property='n_clicks'),
     Input(component_id='remove_movie', component_property='n_clicks'),
 )
-def update_movie_list(data_table, add_movie, remove_movie):
-    return None
+def update_movie_list(data, selected_rows, date, add_movie_button, remove_movie_button):
+    if selected_rows is not None and date is not None:
+        row = data[selected_rows[0]]
+        return add_movie(row, date)
+    else:
+        return no_update
 
 @app.callback(
     Output(component_id='data_table', component_property='data'),
-    Input(component_id='movie_title', component_property='value'),
+    Output(component_id='title_type', component_property='options'),
+    Output(component_id='genre', component_property='options'),
+    Input(component_id='title_type', component_property='value'),
+    Input(component_id='primary_title', component_property='value'),
+    Input(component_id='start_year', component_property='value'),
+    Input(component_id='genre', component_property='value'),
+    Input(component_id='exact_match', component_property='value'),
 )
-def update_data_table(movie_title):
-    return subset_data_table(movie_title)
+def update_data_table(title_type, primary_title, start_year, genre, exact_match):
+    return subset_data_table(title_type, primary_title, start_year, genre, exact_match)
 
 @app.callback(
     Output(component_id='movie_list_table', component_property='data'),

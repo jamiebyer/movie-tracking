@@ -1,18 +1,24 @@
 
 # visit http://127.0.0.1:8050/ in your web browser.
+"""
+missing movies:
+high school musical
+your name
+"""
+
 
 from os import environ
 
 import dash
 from dash import dcc, html, dash_table, no_update
-from dash.dependencies import Input, Output
+from dash.dependencies import Input, Output, State
 from flask import Flask
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import json
 
-from plotting import basic_time_hist
+from plotting import basic_time_hist, genre_bar, year_hist, length_hist
 from add_movies import subset_data_table, add_movie
 from layout import tabs_layout, add_movies_layout, movie_list_layout, plotting_layout
 
@@ -42,18 +48,19 @@ def render_content(tabs):
 
 @app.callback(
     Output(component_id='movie_list', component_property='data'),
+    Output(component_id='data_table', component_property='selected_rows'),
     Input(component_id='data_table', component_property='data'),
-    Input(component_id='data_table', component_property='selected_rows'),
-    Input(component_id='date', component_property='date'),
+    State(component_id='data_table', component_property='selected_rows'),
+    State(component_id='date', component_property='date'),
     Input(component_id='add_movie', component_property='n_clicks'),
     Input(component_id='remove_movie', component_property='n_clicks'),
 )
 def update_movie_list(data, selected_rows, date, add_movie_button, remove_movie_button):
     if selected_rows is not None and date is not None:
         row = data[selected_rows[0]]
-        return add_movie(row, date)
+        return add_movie(row, date), []
     else:
-        return no_update
+        return no_update, no_update
 
 @app.callback(
     Output(component_id='data_table', component_property='data'),
@@ -86,7 +93,11 @@ def update_graph(graph_type):
     if graph_type == "num_movies":
         fig = basic_time_hist("monthly")
     elif graph_type == "genre":
-        fig = go.Figure()
+        fig = genre_bar()
+    elif graph_type == "length":
+        fig = length_hist()
+    elif graph_type == "year":
+        fig = year_hist()
 
     return fig
 
